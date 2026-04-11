@@ -7,11 +7,15 @@
 
 .header-titre{
     margin: 0;
-    font-size: 2 rem;
+    font-size: 2rem;
 }
 
 .header-soustitre{
     margin: 5px 0 0 0;
-    font-size: 1 rem;
+    font-size: 1rem;
     opacity: 0.9;
+}
+.header-date {
+    font-size: 0.8rem;
+    opacity: 0.8;
 }
