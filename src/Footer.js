@@ -4,7 +4,7 @@ function Footer(){
     return(
         <footer className="footer">
             <p className="footer-content">
-                © 2026 SenTransport - ESP/UCAD
+                &copy; 2026 SenTransport &mdash; ESP/UCAD
             </p>
         </footer>
         
