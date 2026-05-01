@@ -8,7 +8,7 @@
     border-left: 4px solid #0A6E31;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     cursor: pointer;
-    transition: tranform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .ligne-bus:hover{
@@ -20,7 +20,7 @@
     background-color: #0A6E31;
     color: white;
     font-weight: bold;
-    font-style: 1.2rem;
+    font-size: 1.2rem;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -37,13 +37,22 @@
 }
 
 .ligne-trajet{
-    font-style: 1rem;
+    font-size: 1rem;
     font-weight: 600;
     color: #2C3E50;
 }
 
 .ligne-arrets{
-    font-style: 0.85rem;
+    font-size: 0.85rem;
     color: #7F8C8D;
     margin-top: 4px;
+}
+
+.ligne-bus-active{
+    border-left: 4px solid #e67E22 ;
+    background-color: #FEF9F3;
+}
+
+.ligne-bus-active .ligne-numero{
+    background-color: #E67E22;
 }
