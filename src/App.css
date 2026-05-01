@@ -37,3 +37,10 @@
     margin-right: 12px;
   }
 }
+
+.message-recherche{
+  color: #757d81;
+  margin: 0 auto;
+  display: block;
+  width: fit-content;
+}

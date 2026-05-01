@@ -11,6 +11,7 @@ function App() {
 
   const [recherche, setRecherche] = useState("");
   const [ligneSelectionnee, setLigneSelectionnee] = useState(null);
+  const [nombreRecherches, setNombreRecherches] = useState(0);
 
   // Tableau de lignes
   const lignes = [
@@ -103,10 +104,16 @@ function handleClickLigne(ligne){
           nbreArrets={totalArrets()}
           ligne={ligneMax().numero}
         />
-        <Recherche valeur={recherche} onChange={setRecherche} />
+        <span className="message-recherche">Vous avez effectué {nombreRecherches} recherche{nombreRecherches === 0 ? "" : "s"}</span>
+        <Recherche valeur={recherche} onChange={setRecherche} count={setNombreRecherches}/>
         <p className="resultat-recherche">
-          { lignesFiltrees.length } ligne{ lignesFiltrees.length > 1 ? 's ' : ' ' } 
-          trouvée{ lignesFiltrees.length > 1 ? 's ' : ' ' }
+          { lignesFiltrees.length === 0 ? (
+            <span>Aucune ligne trouvée</span>)
+          
+          : <>{ lignesFiltrees.length } ligne{ lignesFiltrees.length > 1 ? 's ' : ' ' } 
+              trouvée{ lignesFiltrees.length > 1 ? 's ' : ' ' }
+          </>
+          }
         </p>
 
         {lignesFiltrees.map(ligne => (
