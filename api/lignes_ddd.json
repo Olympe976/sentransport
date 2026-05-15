@@ -65,7 +65,7 @@
     { 
       "id": 8, 
       "numero": "42", 
-      "depart": "Liberté 6", 
+      "depart": "Liberte 6", 
       "arrivee": "Dieuppeul", 
       "arrets": 9, 
       "couleur": "#1A3D8A",
@@ -87,5 +87,34 @@
       "arrets": 8, 
       "couleur": "#2D0A8A",
       "listeArrets": ["Castors", "Fann", "Mermoz", "Gueule Tapee", "Kermel", "Plateau"]
+    },
+    { 
+      "id": 11, 
+      "numero": "6", 
+      "depart": "Malika", 
+      "arrivee": "Palais de Justice", 
+      "arrets": 15, 
+      "couleur": "#0A8A2D",
+      "listeArrets": [
+        "Malika", "Yeumbeul", "Icotaf", 
+        "Cité Lobatt Fall", "Rond-point Lobatt Fall", 
+        "Autoroute", "Colobane", "Place Bakou", 
+        "Cyrnos", "Arsenal", 
+        "Place de l'Indépendance", "Palais de Justice"
+      ]
+    },
+    { 
+      "id": 12, 
+      "numero": "16", 
+      "depart": "Rufisque", 
+      "arrivee": "Lat-Dior", 
+      "arrets": 13, 
+      "couleur": "#6B0A3D",
+      "listeArrets": [
+        "Rufisque", "Fass Mbao", "Diamaguène", 
+        "Thiaroye", "Croisement Pikine", 
+        "Autoroute", "Colobane", 
+        "Médina", "Blaise Diagne", "Sandaga", "Lat-Dior"
+      ]
     }
   ]
